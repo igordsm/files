@@ -21,6 +21,7 @@ pantheon_files_core_vala_files = files(
     'Enums.vala',
     'File.vala',
     'PixbufUtils.vala',
+    'FileOperations.vala',
     'FileChanges.vala',
     'FileUtils.vala',
     'FileConflictDialog.vala',
