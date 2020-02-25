@@ -184,6 +184,7 @@ namespace Marlin.View {
 
             top_menu.forward.connect (() => {current_tab.go_forward ();});
             top_menu.back.connect ((steps) => {
+                if (steps < 0 || current_tab == null) return;
                 while (steps > 0) {
                     current_tab.go_back ();
                     steps--;
